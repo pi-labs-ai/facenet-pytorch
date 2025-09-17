@@ -16,7 +16,6 @@ license = { text = "MIT" }
 urls = { Homepage = "https://github.com/timesler/facenet-pytorch" }
 
 dependencies = [
-    "black>=25.1.0",
     "numpy>=1.24.0,<2.0.0",
     "Pillow>=10.2.0,<10.3.0",
     "requests>=2.0.0,<3.0.0",
@@ -43,3 +42,8 @@ facenet_pytorch = ["*net.pt"]
 [tool.uv]
 link-mode = "copy"
 compile-bytecode = true
+
+[dependency-groups]
+dev = [
+    "black>=25.1.0",
+]
